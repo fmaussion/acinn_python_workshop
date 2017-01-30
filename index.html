@@ -11861,6 +11861,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Getting-started-with-Python">Getting started with Python<a class="anchor-link" href="#Getting-started-with-Python">&#182;</a></h1><p><strong>ACINN workshop</strong></p>
 <p><em>Tue 31.01.2017</em></p>
+<p>Fabien Maussion</p>
 <p><img src="./figures/acinn_logo_large.png" width="30%"  align="center"></p>
 <p><br></p>
 <p>Slides: <a href="http://fabienmaussion.info/acinn_python_workshop">http://fabienmaussion.info/acinn_python_workshop</a></p>
@@ -11873,15 +11874,19 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
+<h1 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h1><ol>
 <li>Why this workshop?</li>
 <li>Switching to python: benefits, drawbacks and pitfalls</li>
 <li>Getting started<ul>
 <li>Major differences with other languages</li>
 <li>The scientific python ecosystem</li>
 <li>Installing Python</li>
-<li>Useful packages</li>
 <li>Integrated development environment</li>
+</ul>
+</li>
+<li>If interest:<ul>
+<li>discover Python with the Notebook </li>
+<li>install party!</li>
 </ul>
 </li>
 </ol>
@@ -11904,7 +11909,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Helping beginners or long-time matlab users to make the first steps towards python</li>
+<li>Helping beginners or long-time matlab/R users to make the first steps towards python</li>
 </ul>
 
 </div>
@@ -11916,7 +11921,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>There are plenty of good Python tutorials online, but some information is outdated and confusing: this is less a problem for the syntax (which doesn't change) than for the python installation (which has greatly improved in the last months/years).</li>
+<li>There are plenty of good Python tutorials online, but some information is outdated and confusing: this is less a problem for the syntax (which doesn't change) than for the python installation (which has greatly improved in the last months/years)</li>
 </ul>
 
 </div>
@@ -12018,7 +12023,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>scientific ecosystem and large user base (including ACINN)</li>
+<li><strong>scientific ecosystem and large user base</strong> (including ACINN)</li>
 </ul>
 
 </div>
@@ -12030,7 +12035,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>"low-risk investment": python is going to stick for a while</li>
+<li>"low-risk investment": python is going to stay around for a while</li>
 </ul>
 
 </div>
@@ -12042,7 +12047,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Open-source (including Python) is the future of scientific research (keyword: open science)</li>
+<li>Open-source (including Python) is the <strong>future of scientific research</strong> (keyword: open science)</li>
 </ul>
 
 </div>
@@ -12063,7 +12068,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>learning curve can be steep when coming from Matlab</li>
+<li>learning curve can be steep when coming from IDL/Matlab</li>
 </ul>
 
 </div>
@@ -12099,7 +12104,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>not always consitent: doc for packages spread on various websites, learning without internet barely impossible</li>
+<li>not always consitent: doc for packages spread on various websites, learning without internet almost impossible</li>
 </ul>
 
 </div>
@@ -12130,7 +12135,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Be patient: do not expect to be productive on the first day (and not on the first week)</li>
+<li>Be patient: do not expect to be productive on the first day (and not on the first week either)</li>
 </ul>
 
 </div>
@@ -12187,12 +12192,12 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Syntax (but this is easy)</li>
+<li>Syntax (of course)</li>
 </ul>
 
 </div>
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12263,13 +12268,31 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">*</span> <span class="mi">4</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12295,43 +12318,12 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">a</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([1, 2, 3])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">**</span> <span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># central tool for vectorized operations</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">a</span>
 </pre></div>
 
 </div>
@@ -12348,7 +12340,38 @@ a.anchor-link {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([1, 4, 9])</pre>
+<pre>array([1, 2, 3])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">*</span> <span class="mi">4</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 4,  8, 12])</pre>
 </div>
 
 </div>
@@ -12359,11 +12382,11 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="k">import</span> <span class="n">interp1d</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="k">import</span> <span class="n">interp1d</span>  <span class="c1"># scientific &quot;toolbox&quot;</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># plotting like in matlab</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mf">9.0</span><span class="p">)</span>
 <span class="n">f1</span> <span class="o">=</span> <span class="n">interp1d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -12738,8 +12761,9 @@ DRTlH0IIDRTlH0IIDfQHpFwkqBImp1EAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Long answer: <strong>there is absolutely no reason for a beginner to use Python 2</strong></p>
-<p>The only reason why people still use Python 2 is when they have a heavy bagage of old code in Python 2. If you need to use a software which is python 2 only, try to contact the author of the package, or use another package.</p>
+<p>Long answer: there is absolutely no reason for a beginner to use Python 2. The Py2/Py3 problem is unfortunate, but Python 3 is better in all aspects. The only reason why people still use Python 2 is when they have a heavy bagage of old (untested) code.</p>
+<p><small>
+*If you need to use a software which is py2 only, try to contact the author of the package (or use another package).*</small></p>
 
 </div>
 </div>
@@ -12804,11 +12828,11 @@ DRTlH0IIDRTlH0IIDfQHpFwkqBImp1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span>
-<span class="n">xarray</span><span class="o">.</span><span class="vm">__file__</span>
+<span class="n">xarray</span><span class="o">.</span><span class="vm">__file__</span>  <span class="c1"># tells me where the file is located</span>
 </pre></div>
 
 </div>
@@ -12820,7 +12844,7 @@ DRTlH0IIDRTlH0IIDfQHpFwkqBImp1EAAAAASUVORK5CYII=
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -12853,7 +12877,7 @@ DRTlH0IIDRTlH0IIDfQHpFwkqBImp1EAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="pip,-conda,-or-both?">pip, conda, or both?<a class="anchor-link" href="#pip,-conda,-or-both?">&#182;</a></h2><p><a href="https://pip.pypa.io/en/stable/">pip</a> is the standard (traditional) way to install python packages. It works well for pure python packages, but is limited when it comes to complex packages with non-python dependencies (e.g. netcdf, GDAL...).</p>
+<h2 id="pip,-conda,-or-both?">pip, conda, or both?<a class="anchor-link" href="#pip,-conda,-or-both?">&#182;</a></h2><p><a href="https://pip.pypa.io/en/stable/">pip</a> is the standard (traditional) way to install python packages. It works well for pure python packages, but is limited when it comes to complex packages with non-python dependencies (e.g. NetCDF, GDAL...).</p>
 <p>Conda will install <em>binaries</em>, meaning that it will ship with all packages dependencies in the same bundle.</p>
 <p>The good news is that <code>pip install my-special-package</code> will work in a conda environment! This is not true the other way around (pip doesn't know about conda), and in general you shouldn't use <code>pip</code> yourselves (unless the package you want to install is not on conda).</p>
 
@@ -12881,7 +12905,7 @@ DRTlH0IIDRTlH0IIDfQHpFwkqBImp1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13343,7 +13367,7 @@ DXIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
@@ -13974,7 +13998,7 @@ dIhxAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Workshop next week!</p>
+<p>⇨ Workshop next week!</p>
 
 </div>
 </div>
@@ -14046,7 +14070,40 @@ dIhxAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Thanks-for-your-attention!">Thanks for your attention!<a class="anchor-link" href="#Thanks-for-your-attention!">&#182;</a></h1><p>Questions?</p>
+<h1 id="Thanks-for-your-attention!">Thanks for your attention!<a class="anchor-link" href="#Thanks-for-your-attention!">&#182;</a></h1><p><strong>Questions?</strong></p>
+<p>Discussion:</p>
+<ul>
+<li>should we set-up a mailing list for programming related questions?</li>
+<li>would there be interest for another workshop of this type? About what?</li>
+<li>how can we coordinate our efforts for better software practices?</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Let's-get-our-hands-dirty!">Let's get our hands dirty!<a class="anchor-link" href="#Let's-get-our-hands-dirty!">&#182;</a></h1><p><small>
+<strong>Install python on your laptop:</strong></p>
+<p><a href="https://github.com/fmaussion/teaching/blob/master/install_python.rst">https://github.com/fmaussion/teaching/blob/master/install_python.rst</a></p>
+<p><br></p>
+<p><strong>Install python on the computer room (linux terminal):</strong></p>
+<div class="highlight"><pre><span></span>$ gedit ~/.bashrc
+</pre></div>
+<p>At the end of this file, add the following two lines:</p>
+<div class="highlight"><pre><span></span><span class="c1"># added for Fabien&#39;s course:</span>
+  <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/scratch/c707/c7071047/miniconda3/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+<p><strong>Download the "getting started" notebook:</strong></p>
+<p><a href="https://raw.githubusercontent.com/fmaussion/teaching/master/python_intro_acinn/Getting_Started.ipynb">https://raw.githubusercontent.com/fmaussion/teaching/master/python_intro_acinn/Getting_Started.ipynb</a> 
+(<em>use "save link as"</em>)</p>
+<p><strong>Start the notebook interface:</strong></p>
+<div class="highlight"><pre><span></span>$ jupyter-notebook
+</pre></div>
+<p>&lt;/small&gt;</p>
 
 </div>
 </div>
